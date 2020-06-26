@@ -138,3 +138,6 @@ async def say(ctx, *,repeat):
 @client.command()
 async def membercount(ctx):
   await ctx.send(len(ctx.guild.members))
+
+def setup(bot):
+	bot.add_cog(MyCog(bot))
