@@ -15,7 +15,7 @@ class MyCog(commands.Cog):
 
     @commands.command()
     async def menu(self, ctx):
-        await ctx.send("**The comm.ands you can use are here:**                                                                                                   .snippets, .r, .c, .ar, .block <userID>, .unblock <userID>, .creator, .ping, .subscribe, .unsubscribe")
+        await ctx.send("**The 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 you can use are here:**                                                                                                   .snippets, .r, .c, .ar, .block <userID>, .unblock <userID>, .creator, .ping, .subscribe, .unsubscribe")
 
     @commands.command()
     async def tester(self, ctx):
@@ -27,7 +27,7 @@ class MyCog(commands.Cog):
    
     @commands.command()
     async def creator(self, ctx):
-        await ctx.send("Looking for the maker of this bo t?                                                                                            If so, the maker is @sandy#1000, if you want a Custom bot like this, DM him!")
+        await ctx.send("**Looking for the maker of this 𝗯𝗼𝘁?**                                                                                            ```If so, the maker is @sandy#1000, if you want a Custom bot like this, DM him!```")
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
