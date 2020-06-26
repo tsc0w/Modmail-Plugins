@@ -24,7 +24,7 @@ class MyCog(commands.Cog):
         
     @commands.command()
     async def addsnippet(self, ctx):
-        await ctx.send("To add more Custom Snippet for this 𝚋𝚘𝚝, DM @sandy#1000!")
+        await ctx.send("**To add more Custom Snippet for this 𝚋𝚘𝚝, DM @sandy#1000!**")
    
     @commands.command()
     async def choose(self, ctx):
