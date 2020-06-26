@@ -10,7 +10,7 @@ class MyCog(commands.Cog):
         print(message.content)
 
     @commands.command()
-    async def echo(self, ctx, *, message):
+    async def talk(self, ctx, *, message):
         await ctx.send(message)
         await ctx.message.delete()
 
