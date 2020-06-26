@@ -6,7 +6,7 @@ class MyCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        print('chicken')
+        print(message.content)
 
     @commands.command()
     async def say(self, ctx, *, message):
