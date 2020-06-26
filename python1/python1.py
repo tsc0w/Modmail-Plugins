@@ -14,7 +14,7 @@ class MyCog(commands.Cog):
         await ctx.send(message)
 
     @commands.command()
-    async def commands(self, ctx):
+    async def menu(self, ctx):
         await ctx.send("**The commands you can use are here:**                                                                                                   .snippets, .r, .c, .ar, .block <userID>, .unblock <userID>, .creator, .ping, .subscribe, .unsubscribe")
 
     @commands.command()
