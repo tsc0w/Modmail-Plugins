@@ -19,7 +19,7 @@ class MyCog(commands.Cog):
 
     @commands.command()
     async def tester(self, ctx):
-        await ctx.send("im testing this out!")
+        await ctx.send("**im testing this out!**")
    
     @commands.command()
     async def commands(self, ctx):
