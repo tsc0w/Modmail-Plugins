@@ -13,12 +13,6 @@ class MyCog(commands.Cog):
     async def echo(self, ctx, *, message):
         await ctx.send(message)
 
-    @commands.Cog.listener()
-    async def on_message(self, message):
-        if message.content == '.help':
-            await message.channel.send("pong")
-        await client.process_commands(message)
-
     @commands.command()
     async def choose(self, ctx):
             await ctx.send(_("Not enough options to pick from."))
