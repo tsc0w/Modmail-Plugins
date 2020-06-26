@@ -15,7 +15,7 @@ class MyCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(message):
-        if message.content == 'ft/pingo':
+        if message.content == '.help':
             await message.channel.send("pong")
         await client.process_commands(message)
         
