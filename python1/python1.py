@@ -13,7 +13,7 @@ class MyCog(commands.Cog):
     async def echo(self, ctx, *, message):
         await ctx.send(message)
 
-    @client.event
+    @commands.Cog.listener()
     async def on_message(message):
         if message.content == 'ft/pingo':
             await message.channel.send("pong")
