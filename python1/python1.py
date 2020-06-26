@@ -16,11 +16,15 @@ class MyCog(commands.Cog):
 
     @commands.command()
     async def menu(self, ctx):
-        await ctx.send("**The 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 you can use are here:**                                                                                                   ```.snippets, .r, .c, .c <time> .ar, .block <userID>, .unblock <userID>, .block, .creator, .ping, .dev .subscribe, .unsubscribe, .purge <amount>, .flickz, .support .edit, .delete, ```                                                                                                       * *all of the 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 are seperated by a comma.*")
+        await ctx.send("**The 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 you can use are here:**                                                                                                   ```.snippets, .addsnippet, .r, .c, .c <time> .ar, .block <userID>, .unblock <userID>, .block, .creator, .ping, .dev .subscribe, .unsubscribe, .purge <amount>, .flickz, .support .edit, .delete, ```                                                                                                       * *all of the 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 are seperated by a comma.*")
 
     @commands.command()
     async def tester(self, ctx):
         await ctx.send("im testing this out!")
+        
+    @commands.command()
+    async def addsnippet(self, ctx):
+        await ctx.send("To add more Custom Snippet for this 𝚋𝚘𝚝, DM @sandy#1000!")
    
     @commands.command()
     async def choose(self, ctx):
