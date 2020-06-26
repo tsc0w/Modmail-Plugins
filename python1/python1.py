@@ -18,6 +18,12 @@ class MyCog(commands.Cog):
         if message.content == '.help':
             await message.channel.send("pong")
         await client.process_commands(message)
+
+    @commands.command
+    async def tester(self, ctx):
+        """Send Debug Links Directly To Hastebin In Much Shorter Time Than Normal, Useful For People That Dont Know As Much About ModMail"""
+
+        await ctx.send_help(ctx.command)
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
