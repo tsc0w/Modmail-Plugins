@@ -1,5 +1,7 @@
 import discord
 from discord.ext import commands
+from core.checks import has_permissions
+from core.models import PermissionLevel
 
 owner_id=514465594175651841
 
@@ -12,7 +14,7 @@ class MyCog(commands.Cog):
         print(message.content)
 
     @commands.command()
-    @commands.has_permissions(is_owner = True)
+    @has_permissions(PermissionLevel.OWNER)
     async def talk(self, ctx, *, message):
         await ctx.send(message)
         await ctx.message.delete()
