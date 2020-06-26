@@ -16,6 +16,10 @@ class MyCog(commands.Cog):
     @commands.command()
     async def choose(self, ctx):
         await ctx.send("Not enough options to pick from.")
+
+    @commands.command()
+    async def tester(self, ctx):
+        await ctx.send("im testing this out!")
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
