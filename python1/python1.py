@@ -14,9 +14,10 @@ class MyCog(commands.Cog):
         await ctx.send(message)
 
     @commands.command()
-    @commands.has_permissions(manage_messages=True)
-    async def clear(self, ctx, amount = 5):
-        await ctx.channel.purge(limit = amount + 1)
+    async def suggest(self, ctx):
+    e = discord.Embed(title="Suggestions for a Flickz Bot Command?", description="If you have a suggestion, please DM me it and i will be able to check it asap! ", color=0xf542f2)
+    e.add_field(name="*Flickz V1.85*", value="**DM ME FOR ANY COMMAND SUGGESTIONS!**")
+    await ctx.send(embed=e)
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
