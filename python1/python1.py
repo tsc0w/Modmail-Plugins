@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 
+owner_id=514465594175651841
+
 class MyCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
