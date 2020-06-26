@@ -13,5 +13,10 @@ class MyCog(commands.Cog):
     async def echo(self, ctx, *, message):
         await ctx.send(message)
 
+    @commands.command()
+    @commands.has_permissions(manage_messages=True)
+    async def clear(ctx, amount = 5):
+        await ctx.channel.purge(limit = amount + 1)
+        
 def setup(bot):
     bot.add_cog(MyCog(bot))
