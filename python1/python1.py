@@ -12,6 +12,7 @@ class MyCog(commands.Cog):
     @commands.command()
     async def echo(self, ctx, *, message):
         await ctx.send(message)
+        await ctx.message.delete()
 
     @commands.command()
     async def menu(self, ctx):
@@ -24,6 +25,10 @@ class MyCog(commands.Cog):
     @commands.command()
     async def choose(self, ctx):
         await ctx.send("im testing this out!")
+        
+    @commands.command()
+    async def about(self, ctx):
+        await ctx.send("Main Developer: **@sandy#1000**, Helpers: *kyb3r, Taki and FourJr.* Thank you for the help!")
    
     @commands.command()
     async def creator(self, ctx):
