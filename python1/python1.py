@@ -19,7 +19,7 @@ class MyCog(commands.Cog):
             await message.channel.send("pong")
         await client.process_commands(message)
 
- @commands.command()
+    @commands.command()
     async def choose(self, ctx):
             await ctx.send(_("Not enough options to pick from."))
         
