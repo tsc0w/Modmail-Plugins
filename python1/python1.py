@@ -19,11 +19,23 @@ class MyCog(commands.Cog):
             await message.channel.send("pong")
         await client.process_commands(message)
 
-    @commands.command
-    async def tester(self, ctx):
-        """Send Debug Links Directly To Hastebin In Much Shorter Time Than Normal, Useful For People That Dont Know As Much About ModMail"""
-
-        await ctx.send_help(ctx.command)
+    @commands.command()
+    @checks.has_permissions(PermissionLevel.REGULAR)
+    async def dog(self, ctx):
+        """Get a Dog fact and a Dog image"""
+        
+        getfact = await self.bot.session.get('https://some-random-api.ml/facts/dog')
+        getimg = await self.bot.session.get('https://some-random-api.ml/img/dog')
+        
+        facttext = await getfact.text()
+        imgtext = await getimg.text()
+        
+        factjson = json.loads(facttext)
+        imgjson = json.loads(imgtext)
+        
+        embed = discord.Embed(title = "Dog", description = factjson["fact"], color = 0x7289da)
+        embed.set_image(url=imgjson["link"])
+        await ctx.send(embed = embed)
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
