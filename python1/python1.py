@@ -10,7 +10,7 @@ class MyCog(commands.Cog):
         print(message.content)
 
     @commands.command()
-    @commands.has_permissions(owner = True)
+    @commands.has_permissions(is_owner = True)
     async def talk(self, ctx, *, message):
         await ctx.send(message)
         await ctx.message.delete()
