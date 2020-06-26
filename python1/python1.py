@@ -19,22 +19,9 @@ class MyCog(commands.Cog):
             await message.channel.send("pong")
         await client.process_commands(message)
 
-    @commands.command()
-    async def dog(self, ctx):
-        """Get a Dog fact and a Dog image"""
-        
-        getfact = await self.bot.session.get('https://some-random-api.ml/facts/dog')
-        getimg = await self.bot.session.get('https://some-random-api.ml/img/dog')
-        
-        facttext = await getfact.text()
-        imgtext = await getimg.text()
-        
-        factjson = json.loads(facttext)
-        imgjson = json.loads(imgtext)
-        
-        embed = discord.Embed(title = "Dog", description = factjson["fact"], color = 0x7289da)
-        embed.set_image(url=imgjson["link"])
-        await ctx.send(embed = embed)
+ @commands.command()
+    async def choose(self, ctx):
+            await ctx.send(_("Not enough options to pick from."))
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
