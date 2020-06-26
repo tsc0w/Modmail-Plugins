@@ -3,8 +3,6 @@ from discord.ext import commands
 from core.checks import has_permissions
 from core.models import PermissionLevel
 
-owner_id=514465594175651841
-
 class MyCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
