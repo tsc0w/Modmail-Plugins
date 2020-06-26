@@ -27,7 +27,7 @@ class MyCog(commands.Cog):
    
     @commands.command()
     async def owner(self, ctx):
-        await ctx.send("**Looking for the maker of this bot?**                                                                                         If so, the maker is @sandy#1000, if you want a Custom bot like this, DM him!")
+        await ctx.send("Looking for the maker of this bot?                                                                                          If so, the maker is @sandy#1000, if you want a Custom bot like this, DM him!")
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
