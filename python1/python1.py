@@ -22,7 +22,7 @@ class MyCog(commands.Cog):
         await ctx.send("im testing this out!")
         
     @commands.command()
-    async def creator(self, ctx):
+    async def owner(self, ctx):
         await ctx.send("**Looking for the maker of this bot?**                                                                                         ```If so, the maker is @sandy#1000, if you want a Custom bot like this, DM him!```")
         
 def setup(bot):
