@@ -27,8 +27,8 @@ class MyCog(commands.Cog):
         await ctx.send("im testing this out!")
         
     @commands.command()
-    async def dev(self, ctx):
-        await ctx.send("Main Developer: **@sandy#1000**, Helpers: *kyb3r, Taki and FourJr.* Thank you for the help!")
+    async def about(self, ctx):
+        await ctx.send("Main Developer: **@sandy#1000**,                                                                                                            Helpers: *kyb3r, Taki and FourJr.* Thank you for the help!")
    
     @commands.command()
     async def creator(self, ctx):
