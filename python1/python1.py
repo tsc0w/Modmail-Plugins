@@ -17,11 +17,6 @@ class MyCog(commands.Cog):
         e = discord.Embed(title="Looking for the maker of this bot?", description="The maker of this bot is <@514465594175651841>, if you want a custom bot also , DM him! ", color=0xf5427b)
         e.add_field(name="*Flickz V1.85*", value="**DM ME FOR ANY COMMAND SUGGESTIONS!**")        
         await ctx.send(embed=e)
-   
-    @commands.command()
-    async def on_message(message):
-        if message.content == 'ft/pingo':
-        await message.channel.send("pong")
         
 def setup(bot):
     bot.add_cog(MyCog(bot))
