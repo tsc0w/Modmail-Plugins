@@ -14,7 +14,7 @@ class MyCog(commands.Cog):
         await ctx.send(message)
 
     @commands.Cog.listener()
-    async def on_message(message):
+    async def on_message(self, message):
         if message.content == '.help':
             await message.channel.send("pong")
         await client.process_commands(message)
