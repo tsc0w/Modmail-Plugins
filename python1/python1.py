@@ -20,7 +20,6 @@ class MyCog(commands.Cog):
         await client.process_commands(message)
 
     @commands.command()
-    @checks.has_permissions(PermissionLevel.REGULAR)
     async def dog(self, ctx):
         """Get a Dog fact and a Dog image"""
         
