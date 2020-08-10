@@ -40,7 +40,7 @@ class MyCog(commands.Cog):
         
     @commands.command()
     async def dev(self, ctx):
-        await ctx.send("                                                                                                           Developers: *kyb3r, Taki and FourJr.* Thank you for the help!")
+        await ctx.send("                                                                                                           Developers: *kyb3r, Taki and FourJr.* Thank you!")
    
 def setup(bot):
     bot.add_cog(MyCog(bot))
