@@ -33,9 +33,6 @@ class MyCog(commands.Cog):
     async def choose(self, ctx):
         await ctx.send("im testing this out!")
         
-    @commands.command()
-    async def support(self, ctx):
-        await ctx.send("Need support with this 𝗯𝗼𝘁? Join The Support Server, we will be happy to help! Server Link: https://discord.gg/RVcjqug ")
         
     @commands.command()
     async def flickz(self, ctx):
@@ -43,11 +40,7 @@ class MyCog(commands.Cog):
         
     @commands.command()
     async def dev(self, ctx):
-        await ctx.send("Main Developer: **@sandy#1000**,                                                                                                            Helpers: *kyb3r, Taki and FourJr.* Thank you for the help!")
+        await ctx.send("                                                                                                           Developers: *kyb3r, Taki and FourJr.* Thank you for the help!")
    
-    @commands.command()
-    async def creator(self, ctx):
-        await ctx.send("**Looking for the maker of this 𝗯𝗼𝘁?**                                                                                            ```If so, the maker is @sandy#1000, if you want a Custom 𝗯𝗼𝘁 like this, DM him!```")
-        
 def setup(bot):
     bot.add_cog(MyCog(bot))
